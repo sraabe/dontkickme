@@ -24,7 +24,7 @@ char keys[5] = {
 };
 
 void *ffxiv_keepalive(
-    void *hWnd
+    HWND hWnd
 )
 {
     time_t t, ts;
