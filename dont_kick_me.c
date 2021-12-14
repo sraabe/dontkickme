@@ -27,7 +27,7 @@ int main(int argc, char **argv)
         SendMessage(hWnd, WM_KEYDOWN, keys[i], 0x00000000 + ((rand() % 0x100 + 0xff) << 16));
         Sleep(rand() % 50 + 150);
         SendMessage(hWnd, WM_KEYUP, keys[i], 0x00010003);
-        sleep_ms = (rand() % 40 + 20) * 1000;
+        sleep_ms = (rand() % 600 + 600) * 1000;
         fprintf(stdout, "Sent keypress \"%c\", now sleeping for %d seconds..\n", keys[i], sleep_ms / 1000);
         Sleep(sleep_ms);
     } while (1);
